@@ -1,0 +1,7 @@
+<div *ngIf="authService.isLoggedIn()">
+  <h2>Welcome to the Home page!</h2>
+  <button (click)="onLogout()">Logout</button>
+</div>
+<div *ngIf="!authService.isLoggedIn()">
+  <h2>Please log in to access the Home page.</h2>
+</div>
